@@ -7,11 +7,13 @@ public  class SortEmbaracosa {
         
         SortedList = AstrosFromDatabase.clone();
         boolean houveTroca;
+
         do {
+            
             houveTroca = false;
             for(Integer i = 0; i <SortedList.size()-1; i++) {
 
-                Astro__c = aux;
+                Astro__c aux;
                 Double atual = SortedList.get(i).Massa__c;
                 Double posterior = SortedList.get(i+1).Massa__c;
 
