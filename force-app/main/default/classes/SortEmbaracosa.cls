@@ -1,9 +1,9 @@
-public  class SortEmbaracosa {
+public  class SortEmbaracosa {   
 
-    List<Astro__c> AstrosFromDatabase = [SELECT id, name, Massa__c FROM Astro__c];
-    List<Astro__c> SortedList;
-
-    public List<Astro__c> executeSort() {
+    @future public static void executeSort() {
+        
+         List<Astro__c> AstrosFromDatabase = [SELECT id, name, Massa__c FROM Astro__c LIMIT 1000];
+   		 List<Astro__c> SortedList;
         
         SortedList = AstrosFromDatabase.clone();
         boolean houveTroca;
@@ -11,7 +11,7 @@ public  class SortEmbaracosa {
         do {
             
             houveTroca = false;
-            for(Integer i = 0; i <SortedList.size()-1; i++) {
+            for(Integer i = 0; i < SortedList.size() -1; i++) {
 
                 Astro__c aux;
                 Double atual = SortedList.get(i).Massa__c;
@@ -27,6 +27,6 @@ public  class SortEmbaracosa {
         }
     }   
         while(houveTroca);
-        return SortedList;
+        //return SortedList;
   }  
 }
