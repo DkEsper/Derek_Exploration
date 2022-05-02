@@ -13,6 +13,15 @@
     "entryPointFilter": "",
     "sfdxProject": "${workspaceRoot}"
   },
+  {
+    "name": "Launch Apex Debugger",
+    "type": "apex",
+    "request": "launch",
+    "userIdFilter": [],
+    "requestTypeFilter": [],
+    "entryPointFilter": "",
+    "sfdxProject": "${workspaceRoot}"
+  },
   
     {
       "name": "Launch Apex Replay Debugger",
