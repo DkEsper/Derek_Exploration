@@ -1,23 +1,21 @@
 {
   "configurations": [
+    {
+      "name": "Launch Apex Replay Debugger",
+      "type": "apex-replay",
+      "request": "launch",
+      "logFile": "${command:AskForLogFileName}",
+      "stopOnEntry": true,
+      "trace": true
+    },
   {
     "name": "Launch Apex Debugger",
     "type": "apex",
     "request": "launch",
     "userIdFilter": [],
-    "sfdxProject": "${workspaceRoot}",
-  },
-{
-  "name": "Launch Apex Replay Debugger",
-  "type": "apex-replay",
-  "request": "launch",
-  "logFile": "${command:AskForLogFileName}",
-  "stopOnEntry": true,
-  "trace": true
-}
-
+    "requestTypeFilter": [],
+    "entryPointFilter": "",
+    "sfdxProject": "${workspaceRoot}"
+  }
   ]
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  
+}
